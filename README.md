@@ -23,5 +23,5 @@ features:
 - title: Today
   details: 搭建自己的博客
 - title: Tomorrow
-  details: 让自己的博客和自己一起成长
+  details: 让博客和自己一起成长
 ---

@@ -12,7 +12,7 @@ categories:
 
 函数的声明方式有两种，即函数声明和函数表达式
 
-```
+```JavaScript
 function functionName(parameters) {
   // body
 }
@@ -22,7 +22,7 @@ function functionName(parameters) {
 函数表达式：
 
 
-```
+```JavaScript
 var x = function (parameters) {
   // body
 };
@@ -37,7 +37,7 @@ js 函数可以通过一个表达式定义.  函数表达式可以存储在变�
 执行匿名函数，在匿名函数后面加上一个括号即可立即执行！
 
 
-```
+```JavaScript
 (function (){
 
     console.log("aaa");
@@ -46,12 +46,13 @@ js 函数可以通过一个表达式定义.  函数表达式可以存储在变�
 ```
 若需要传值，直接将参数写到括号内即可：
 
+```JavaScript
 (function (str){
 
     console.log("aaa"+str);
 
 })("hhh")
-
+```
 
 # 匿名函数的应用场景
 
@@ -59,7 +60,7 @@ js 函数可以通过一个表达式定义.  函数表达式可以存储在变�
 - 1、通过获取dom元素的事件
 
 
-```
+```html
 <script>
 
     //获得按钮元素
@@ -78,7 +79,7 @@ js 函数可以通过一个表达式定义.  函数表达式可以存储在变�
 ```
 - 2、对象中的方法
 
-```
+```JavaScript
 var obj={
 
     name:"aaa",
@@ -99,7 +100,7 @@ console.log(obj.fn());//我叫aaa今年18岁了！
 - 3、函数表达式
 
 
-```
+```JavaScript
 //将匿名函数赋值给变量fn。
 
 var fn=function(){
@@ -115,7 +116,7 @@ console.log(fn());//我
 - 4、回调函数
 
 
-```
+```JavaScript
 setInterval(function(){
 
     console.log("我其实是一个回调函数，每次1秒钟会被执行一次");
@@ -127,6 +128,7 @@ setInterval(function(){
 
 //将匿名函数作为返回值
 
+```JavaScript
 function fn(){
 
     //返回匿名函数
@@ -137,10 +139,10 @@ function fn(){
     }
 
 }
-
+```
 //调用匿名函数
 
-console.log(fn()());//aaa
+> console.log(fn()());//aaa
 
 # 匿名函数的作用
 

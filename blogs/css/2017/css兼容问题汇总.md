@@ -119,7 +119,7 @@ categories:
     左边对象浮动，右边采用外补丁的左边距来定位，右边对象内的文本会离左边有3px的间距.
     
     
-```
+```html
     #box{ float:left; width:800px;}
     #left{ float:left; width:50%;}
     #right{ width:50%;}
@@ -183,11 +183,13 @@ categories:
     ④万能float 闭合(非常重要!)
         
     关于 clear float 的原理可参见 [How To Clear Floats Without Structural Markup],将以下代码加入Global CSS 中,给需要闭合的div加上class="clearfix" 即可,屡试不爽。
-    ```
-    .clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
-    .clearfix { display:inline-block; }
-    
-    .clearfix {display:block;}
+
+    ```css
+        .clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+        .clearfix { display:inline-block; }
+        
+        .clearfix {display:block;}
+
     ```
     或者这样设置：.hackbox{ display:table; //将对象作为块元素级的表格显示}
 
@@ -197,9 +199,12 @@ categories:
 
     例：
     
-    ```
+    ```css
     #box {background-color:#eee; }
     #box p {margin-top: 20px;margin-bottom: 20px; text-align:center; }
+    ```
+
+    ```html
     <div id="box">
     <p>p对象中的内容＜/p>
     </div>
@@ -289,7 +294,7 @@ categories:
     被点击访问过的超链接样式不在具有hover和active了,很多人应该都遇到过这个问题,解决技巧是改变CSS属性的排列顺序: L-V-H-A
 
     Code:
-    ```
+    ```html
     <style type="text/css">
     <!--
     a:link {}
@@ -313,7 +318,7 @@ categories:
 27. 为什么FF下文本无法撑开容器的高度
 
     标准浏览器中固定高度值的容器是不会象IE6里那样被撑开的,那我又想固定高度,又想能被撑开需要怎样设置呢？办法就是去掉height设置min-height:200px; 这里为了照顾不认识min-height的IE6 可以这样定义:
-    ```
+    ```css
     {
     height:auto!important;
     height:200px;
@@ -326,7 +331,7 @@ categories:
     FireFox对div与div之间的空格是忽略的，但是IE是处理的。因此在两个相邻div之间不要有空格跟回车，否则可能造成不同浏览间之间格式不正 确，比如著名的3px偏差（多个img标签连着，然后定义float: left;结果在firefox里面正常，而IE里面显示的每个img都相隔了3px。我把标签之间的空格都删除都没有作用。解决方法是在img外面套 li，并且对li定义margin: 0; 避免方式：在必要的时候不要无视 list 标签）而且原因难以查明。
 
 29. 条件注释
-    ```
+    ```html
     <link rel="stylesheet" type="text/css" href="css.css" />
 
     <!--[if IE 7]>

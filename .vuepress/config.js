@@ -22,36 +22,21 @@ module.exports = {
   "themeConfig": {
     "nav": [
       {
-        "text": "Home",
+        "text": "主页",
         "link": "/",
         "icon": "reco-home"
       },
       {
-        "text": "TimeLine",
+        "text": "时间轴",
         "link": "/timeline/",
         "icon": "reco-date"
       },
       {
-        "text": "Docs",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
-          }
-        ]
+        "text": "GitHub",
+        "link": "https://github.com/Swenyy",
+        "icon": "reco-github"
       },
-      {
-        "text": "Contact",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "GitHub",
-            "link": "https://github.com/Swenyy",
-            "icon": "reco-github"
-          }
-        ]
-      }
+      
     ],
     "sidebar": {
       "/docs/theme-reco/": [
@@ -65,19 +50,37 @@ module.exports = {
     "blogConfig": {
       "category": {
         "location": 2,
-        "text": "Category"
+        "text": "分类"
       },
       "tag": {
         "location": 3,
-        "text": "Tag"
+        "text": "标签"
       }
     },
     "friendLink": [
       {
-        "title": "午后南杂",
-        "desc": "Enjoy when you can, and endure when you must.",
-        "email": "1156743527@qq.com",
-        "link": "https://www.recoluan.com"
+        "title": "王叨叨",
+        "desc": "无叨叨，不博客！不懂用户体验的前端不是好爸爸……",
+        "avatar": "/dao.png",
+        "link": "https://wangdaodao.com/"
+      },
+      {
+        "title": "王金山",
+        "desc": "Good Good Study，Day Day Up！！！",
+        "avatar": "/jinshan.png",
+        "link": "https://www.wangjinshan.top/"
+      },
+      {
+        "title": "赵十二",
+        "desc": "努力奋进的赵十二",
+        "avatar": "/zhaoshier.jpg",
+        "link": "https://zhaoshier.top/"
+      },
+      {
+        "title": "林梧桐",
+        "desc": "simple.",
+        "avatar": "/xuan.png",
+        "link": "https://www.lynnwutong.top/"
       },
       {
         "title": "vuepress-theme-reco",
@@ -93,9 +96,23 @@ module.exports = {
     "author": "Sweny",
     "authorAvatar": "/sweny.jpg",
     "record": "xxxx",
-    "startYear": "2017"
+    "startYear": "2016"
   },
   "markdown": {
     "lineNumbers": true
   }
 }
+
+/* 
+{
+        "text": "Contact",
+        "icon": "reco-message",
+        "items": [
+          {
+            "text": "GitHub",
+            "link": "https://github.com/Swenyy",
+            "icon": "reco-github"
+          }
+        ]
+      }
+*/

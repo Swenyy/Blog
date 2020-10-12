@@ -351,7 +351,7 @@ categories:
 
 
 30. 强制渲染
-    ```
+    ```html
     <meta http-equiv=X-UA-Compatible content=IE=EmulateIE7>    //这句话的意思是强制使用IE7模式来解析网页代码！
 
     <meta http-equiv=“X-UA-Compatible” content=“IE=8″>
@@ -366,7 +366,7 @@ categories:
     ```
 
 31. js兼容文件
-    ```
+    ```html
     使IE5,IE6兼容到IE7模式（推荐）
 
     <!–[if lt IE 7]>
@@ -387,7 +387,7 @@ categories:
 
 
 32. 浏览器识别符
-    ```
+    ```css
     p{ _color:red; }           IE6 专用
     *html p{ color:#red; }  IE6 专用
     p{ +color:red; }           IE6,7 专用

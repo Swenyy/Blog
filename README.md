@@ -2,7 +2,8 @@
 home: true
 heroText: sweny-blog
 tagline: Look on the bright side.
-#heroImage: /hero.png
+#heroImage: /timg1.gif
+bgImage: /timg1.gif
 # heroImageStyle: {
 #   maxWidth: '600px',
 #   width: '100%',
@@ -12,7 +13,7 @@ tagline: Look on the bright side.
 #   borderRadius: '1rem',
 # }
 bgImageStyle: {
-  height: '450px'
+  height: '600px'
 }
 isShowTitleInHome: false
 actionText: Guide

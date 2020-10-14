@@ -13,8 +13,10 @@ bgImage: /banner5.gif
 #   borderRadius: '1rem',
 # }
 bgImageStyle: {
-  backgroundSize: '100% auto',
-  height: '600px'
+  # backgroundSize: '100% 100%',
+  background-size: "cover",
+　background-position: "center center",
+  maxHeight: '600px'
 }
 isShowTitleInHome: false
 actionText: Guide

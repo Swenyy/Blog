@@ -17,7 +17,8 @@ cd public
 
 git init
 git add -A
-git commit -m 'deploy'
+date=`date +%Y-%m-%d_%H:%M:%S`
+git commit -m "deploy ${date}"
 
 # 如果你想要部署到 https://<USERNAME>.github.io
 # git push -f git@github.com:zhaoshier/zhaoshier.github.io.git master

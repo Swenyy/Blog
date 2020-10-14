@@ -1,9 +1,9 @@
 ---
 home: true
 heroText: sweny-blog
-tagline: Look on the bright side.
+tagline: May your choices reflect your hopes, not your fears.
 #heroImage: /timg1.gif
-bgImage: /timg1.gif
+bgImage: /banner5.gif
 # heroImageStyle: {
 #   maxWidth: '600px',
 #   width: '100%',
@@ -13,6 +13,7 @@ bgImage: /timg1.gif
 #   borderRadius: '1rem',
 # }
 bgImageStyle: {
+  backgroundSize: '100% auto',
   height: '600px'
 }
 isShowTitleInHome: false

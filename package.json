@@ -13,8 +13,12 @@
     "vuepress-theme-reco": "^1.5.7"
   },
   "dependencies": {
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "start": "^5.1.0",
-    "vue-class-component": "^7.2.3"
+    "vue-class-component": "^7.2.3",
+    "vuepress-plugin-cursor-effects": "^1.0.0",
+    "vuepress-plugin-meting": "^0.1.1",
+    "vuepress-plugin-ribbon": "^1.0.2"
   },
   "description": "blog"
 }

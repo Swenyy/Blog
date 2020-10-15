@@ -13,9 +13,9 @@ categories:
 
 首先借鉴了前人经验：
 
-https://segmentfault.com/a/1190000017207205
+[手把手教你使用vuepress搭建个人博客](https://segmentfault.com/a/1190000017207205)
 
-https://www.cnblogs.com/softidea/p/10084946.html
+[手把手-可复制](https://www.cnblogs.com/softidea/p/10084946.html)
 
 可以先看一下
 
@@ -35,7 +35,7 @@ https://www.cnblogs.com/softidea/p/10084946.html
 ## 注意事项
 
 -  建立一个仓库用来存放blog项目，名字可以随意起，然后将仓库clone到本地，在本地仓库文件夹内放入项目文件夹，或者新建blog项目（新建项目可以参考vuepress教程，新建后根据
-https://vuepress-theme-reco.recoluan.com/views/1.x/  教程安装主题），之后就在这个项目来开发博客，以后仅需要更改这个项目就OK了。
+[vuepress-theme-reco主题教程](https://vuepress-theme-reco.recoluan.com/views/1.x/) 进行安装），之后就在这个项目来开发博客，以后仅需要更改这个项目就OK了。
 
 - USERNAME.github.io仓库，用来存放打包之后生成的文件，不需要克隆到本地，（USERNAME 必须是你 Github的账号名称，不是你的名字拼音，也不是你的非主流网名，不要瞎起，要保证和Github账号名一模一样！）
 
@@ -60,7 +60,8 @@ cd public
 
 git init
 git add -A
-git commit -m 'deploy'
+date=`date +%Y-%m-%d_%H:%M:%S`
+git commit -m "deploy ${date}"
 
 # 如果你想要部署到 https://<USERNAME>.github.io
 
@@ -86,3 +87,15 @@ cd -
         3.  解析设置中“记录值”，A类记录的记录值写的是你服务器的IP地址，且必须是IPv4地址；
         4. 由于我借用GitHub服务，所以我只需在域名解析中添加CNAME类型记录，记录值直接放入GitHub的域名，即swenyy.github.io，至此域名解析工作结束。
     3.  在GitHub的io仓库中的setting里找到GitHub Pages,在Custom domain中填写域名解析中的主机	www.sunwenyue.top 然后点击保存按钮即可。
+
+## 美化博客参见：
+
+[vuepress插件库](https://vuepress-theme-reco.recoluan.com/views/other/recommend.html)
+
+[vuepress插件配置教程](https://www.wangt.cc/2020/07/vuepress%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96%E4%B9%8Breco%E4%B8%BB%E9%A2%98/)
+
+[配置教程](https://www.cnblogs.com/glassysky/p/13387739.html)
+
+## 使用hexo搭建个人博客视频教程
+
+[hexo视频教程](https://www.youtube.com/watch?v=xvIRGmKWpFM)

@@ -280,7 +280,7 @@ module.exports = {
           /* server: "netease",
           type: "playlist",
           mid: "621465725" */
-          auto: "https://music.163.com/#/song?id=340383"
+          auto: "https://music.163.com/#/playlist?id=5288966023"
         },          // 不配置该项的话不会出现全局播放器
         aplayer: {
           lrcType: 3,

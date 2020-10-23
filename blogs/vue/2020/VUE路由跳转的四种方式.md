@@ -7,7 +7,8 @@ categories:
  - vue
 ---
 
-# 一、声明式 router-link
+
+##  一、声明式 router-link
 
 ### 1、不带参数，根据路由路径和根据路由名称
 
@@ -23,7 +24,7 @@ categories:
 
 
 ### 2、带参数
-#### ①params传参数 
+#### **①params传参数 **
 ```
 <router-link :to="{name:'home', params: {id:1}}"> 
 ```
@@ -37,7 +38,7 @@ categories:
 - html 取参  $route.params.id
 - script 取参  this.$route.params.id
 
-#### ②query传参数
+#### **②query传参数**
 
 ```
 <router-link :to="{name:'home', query: {id:1}}"> 
@@ -52,7 +53,7 @@ categories:
 - html 取参  $route.query.id
 - script 取参  this.$route.query.id
 
-# 二、编程式 this.$router.push()(函数里面调用)
+## 二、编程式 this.$router.push()(函数里面调用)
 
 ### 1、不带参数
 
@@ -96,7 +97,7 @@ this.$router.push({name:'home',params: {id:'1'}})  // 只能用 name
  
 - params类似 post, 跳转之后页面 url后面不会拼接参数 , 但是刷新页面id 会消失
 
-# 三、this.$router.replace()(用法同上,push)
+## 三、this.$router.replace()(用法同上,push)
 
 ### 区别
 
@@ -108,14 +109,14 @@ this.$router.push({name:'home',params: {id:'1'}})  // 只能用 name
 
 跳转到指定url路径，但是history栈中不会有记录，点击返回会跳转到上上个页面 (就是直接替换了当前页面)
 
-# 四、this.$router.go(n)
+## 四、this.$router.go(n)
 
 
-```
+```js
 this.$router.go(n)
 向前或者向后跳转n个页面，n可为正整数或负整数
 ```
-### 注意：
+注意：
 **这种方法页面会一瞬间的白屏，体验不是很好，虽然只是一行代码的事**
 
 

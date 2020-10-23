@@ -7,7 +7,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "/icon2.png"
+        "href": "/iconyues.png"
       }
     ],
     [
@@ -20,6 +20,10 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
+    valineConfig: {
+      appId: 'jCcQvXhKhH9o9eOLertivEzk-gzGzoHsz',// your appId
+      appKey: 'u16RpqD3dsvu3WeSI4g3druU', // your appKey
+    },
     "nav": [
       {
         "text": "主页",
@@ -79,6 +83,10 @@ module.exports = {
             "text": "现代JavaScript教程",
             "link": "https://zh.javascript.info/"
           },
+          {
+            "text": "MarkDown教程",
+            "link": "https://www.runoob.com/markdown/md-tutorial.html"
+          }
         ]
       },
       {
@@ -208,39 +216,44 @@ module.exports = {
         "text": "标签"
       }
     },
+    subSidebar: 'auto',
+    sidebarDepth: 4,
     "friendLink": [
       {
         "title": "王叨叨",
         "desc": "无叨叨，不博客！不懂用户体验的前端不是好爸爸……",
-        "avatar": "/dao.png",
         "link": "https://wangdaodao.com/"
       },
       {
         "title": "王金山",
         "desc": "Good Good Study，Day Day Up！！！",
-        "avatar": "/jinshan.png",
         "link": "https://www.wangjinshan.top/"
       },
       {
         "title": "赵十二",
         "desc": "努力奋进的赵十二",
-        "avatar": "/zhaoshier.jpg",
+        "email": "zhaoshiermy@sina.com",
         "link": "https://zhaoshier.top/"
       },
       {
         "title": "林梧桐",
-        "desc": "simple.",
-        "avatar": "/xuan.png",
+        "desc": "天大地大，世界比你想象中朦胧",
+        "email": "lynnyx18@sina.com",
         "link": "https://www.lynnwutong.top/"
       },
       {
-        "title": "vuepress-theme-reco",
-        "desc": "A simple and beautiful vuepress Blog & Doc theme.",
-        "link": "https://vuepress-theme-reco.recoluan.com",
-        "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png"
+        "title": "桦林",
+        "desc": "生活学习总结.",
+        "link": "http://zhanghualin.com/"
+      },
+      {
+        title: '午后南杂',
+        desc: 'Enjoy when you can, and endure when you must.',
+        email: '1156743527@qq.com',
+        link: 'https://www.recoluan.com'
       }
     ],
-    "logo": "/sweny.jpg",
+    "logo": "/iconyue.jpg",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
@@ -256,7 +269,7 @@ module.exports = {
     [
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
-        theme: [ 'shizuku', 'koharu', 'whiteCat', 'blackCat', 'haru1', 'haru2', 'izumi', 'wanko', 'miku', 'haruto'],
+        theme: [ 'shizuku', 'koharu', 'whiteCat', 'blackCat', 'wanko', 'haruto'],
         clean: false,
         messages: {
           welcome: ' 欢迎来到$site.title ',
@@ -265,8 +278,8 @@ module.exports = {
           close: '再见哦'
         },
         messageStyle: {
-          right: '8px',
-          bottom: '200px' 
+          right: '18px',
+          bottom: '180px' 
         },
         width: 180,
         height: 250
@@ -277,9 +290,9 @@ module.exports = {
       'meting', {
         metingApi: "https://api.i-meto.com/meting/api",
         meting: {
-          /* server: "netease",
+          server: "netease",
           type: "playlist",
-          mid: "621465725" */
+          mid: "5288966023",
           auto: "https://music.163.com/#/playlist?id=5288966023"
         },          // 不配置该项的话不会出现全局播放器
         aplayer: {
@@ -305,6 +318,26 @@ module.exports = {
         shape: ['circle'],  // shape of the particle, default: 'star'
         zIndex: 999999999           // z-index property of the canvas, default: 999999999
       }
-    ]
+    ],
+    /* [
+      //图片放大插件 先安装在配置， npm install @vuepress\plugin-medium-zoom --save
+      '@vuepress\plugin-medium-zoom', {
+        selector: '.page img',
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: 'rgba(25,18,25,0.9)',
+          scrollOffset: 40
+        }
+      }
+    ] */
+    ["vuepress-plugin-nuggets-style-copy", {
+      copyText: "复制代码",  //vuepress复制粘贴提示插件P 先安装在配置 npm install vuepress-plugin-nuggets-style-copy --save
+      tip: {
+        content: "复制成功!"
+      }
+    }]
+
+
   ]
 }

@@ -7,11 +7,11 @@ categories:
  - jquery
 ---
 
-## jQuery发展史
+## jQuery简介
 
 jQuery是一个JavaScript类库，它通过封装原生的JavaScript函数得到一整套定义好的方法。它的作者是John Resig 于2006年创建的一个开源项目，随着越来越多开发者的加入，jQuery已经集成了JavaScript、CSS、DOM和Ajax于一体的强大功能。它可以用最少的代码，完成更多复杂而困难的功能，从而得到了开发者的青睐。
 
-#### jQuery是一个类库：
+### jQuery是一个类库：
 
 
 一句话总结类库,就是JavaScript的工具库。原始社会生火方式钻木取火，但是有了火柴就不一样了。
@@ -33,13 +33,13 @@ jQuery是一个JavaScript类库，它通过封装原生的JavaScript函数得到
 
     内容分发网络，是一种网络构架模式。
 
-#### jQuery1.XX版本和2.XX版本的区别
+### jQuery1.XX版本和2.XX版本的区别
 
 1.XX版本兼容IE 6， 7 ， 8 而2.XX版本放弃了对IE6，7 ,  8 的兼容。
 
-#### 拓展：
 
-##### jquery的发展历程：
+
+## jquery的发展历程：
 **jQuery 1.0**
 
 （2006年8月）：该库的第一个稳定版本，已经具有了对CSS选择符、事件处理和AJAX交互的稳健支持。
@@ -106,7 +106,7 @@ jQuery 1.9.1汉化版2013年2月23日发布
 
 2014年5月1日，jQuery2.1.1版发布
 
-**为什么jquery如此优秀？**
+## 为什么jquery如此优秀？
 
 1.利用css优势查找页面元素的机制构建于css选择符上。
 
@@ -116,21 +116,23 @@ jQuery 1.9.1汉化版2013年2月23日发布
 
 4.将多重操作集于一行（为了必变过度使用临时变量或不必要的代码重复，jquery在其多数方法中使用了连缀的编程模式）(object.xxx.xxx.xxx……)
 
-案例1：
 
-搭建jquery环境。
 
-jQuery核心
+## jQuery核心
 
-window.onload是原生方法，只会执行一次
+
+
+### jQuery中与window.onload有什么不同?
+
+- window.onload是原生方法，只会执行一次
  
-jquery中的window.onload=function(){}方法是jQuery(document).ready(function(){})
+- jquery中的window.onload=function(){}方法是jQuery(document).ready(function(){})
 
-jQuery中与window.onload有什么不同?
-window.onload必须等到页面内包括图片的所有元素加载完毕后才能执行。
-$(document).ready()是DOM结构绘制完毕后就执行，不必等到加载完毕。
+- window.onload必须等到页面内包括图片的所有元素加载完毕后才能执行。
 
-实验证明.ready()方法他的执行速度更快于window.onload 。内部原理忽略不计。
+- $(document).ready()是DOM结构绘制完毕后就执行，不必等到加载完毕。
+
+- 实验证明.ready()方法他的执行速度更快于window.onload 。内部原理忽略不计。
 
 可以共存就意味着可以同时使用。但是并不意味着， 这两个方法同时存在是合理的。一个页面我们习惯只放一个.ready()方法。 这样不会让页面的逻辑混乱，会增加代码的可读性 。 
 
@@ -151,10 +153,10 @@ $(function(){
 
 });
 ```
-jQuery中等所有图片全部加载完的方法是$(window).load(functionName);
+**jQuery中等所有图片全部加载完的方法是$(window).load(functionName)**
 
 
-两种确定是否成功引入jquery库的方法。
+### 两种确定是否成功引入jquery库的方法
 
 1.打开浏览器，soucres资源选项里看，是否jQuery成功引入。
 

@@ -7,10 +7,6 @@ categories:
  - css
 ---
 
-# 一、px，em，rem，vw的简单介绍
-
----
-
 
 ## 1、px
 
@@ -65,7 +61,7 @@ rem和em一样也是相对长度单位，但是不一样的是rem始终都是相
 ```
 document.documentElement.style.fontSize='20px'
 ```
-**总结：**
+## 总结：
 
 - 用rem，不用em，尺寸清晰，易于维护
 - 由于rem是root em，故其与em兼容性是一致的

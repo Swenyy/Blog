@@ -7,7 +7,7 @@ categories:
  - vue
 ---
 
-# 环境变量
+## 环境变量
 一个环境变量文件只包含环境变量的键值对
 
 ```
@@ -15,14 +15,14 @@ NODE_ENV = 'development'
 VUE_APP_BASE_URL=http://127.0.0.1:8080/
 VUE_APP_TITLE = 'Glodon-dev'
 ```
-**注意：**
+### 注意：
 - NODE_ENV  是 “development”、“production”、"test"或者自定义的值。具体的值取决于应用运行的模式；
 - BASE_URL 会和 vue.config.js 中的publicPath选项相符，即你的应用会部署到的基础路径；
 - 除了 NODE_ENV，其他的环境变量必须以 VUE_APP_ 开头；
 - 项目中的使用方式：process.env.环境变量名，如process.env.NODE_ENV，通过这一全局变量可以执行对应的逻辑；
 
 
-# 模式
+## 模式
 模式是 Vue CLI 项目中一个重要的概念。默认情况下，一个 Vue CLI 项目有三个模式：
 - development 模式（开发模式）用于 vue-cli-service serve;
 - production 模式（生成模式）用于 vue-cli-service build 和 vue-cli-service test:e2e;
@@ -43,7 +43,7 @@ VUE_APP_TITLE = 'Glodon-dev'
 ```
 
 
-**注意：**
+### 注意：
 - 一个模式可以包含多个环境变量；
 - 每个模式都会将环境变量中的 NODE_ENV 的值设置为模式的名称；
 - 可以通过为.env文件增加后缀来设置某个模式下特有的环境变量；
@@ -59,7 +59,9 @@ VUE_APP_TITLE = 'Glodon-dev'
 ```
 ## 使用案例
 
-### 不同模式下，为axios指定不同的baseUrl
+**不同模式下，为axios指定不同的baseUrl**
+
+
 创建development模式的环境变量文件，项目根目录下新建.env.development文件
 
 ```
@@ -106,7 +108,10 @@ console.log(process.env.NODE_ENV)
 console.log(process.env.VUE_APP_BASE_URL)
 console.log(this.$http.defaults.baseURL)
 ```
-## 使用案例：自定义模式——自定义一个fat模式
+## 使用案例：
+
+**自定义模式——自定义一个fat模式**
+
 在项目根目录下新建环境变量文件 .env.glodon
 
 ```js
@@ -116,7 +121,7 @@ VUE_APP_BASE_URL=https://www.glodon.com
 根目录下package.json中新增脚本命令
 
 
-```
+```js
 {
  "name": "vue_shop",
  "version": "0.1.0",

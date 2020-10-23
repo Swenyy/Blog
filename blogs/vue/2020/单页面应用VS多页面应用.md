@@ -63,7 +63,7 @@ http://xxx/page1.html | http://xxx/page2.html
 
 而多页面应用MultiPage Application，MPA，指有多个独立的页面的应用，每个页面必须重复加载 js,css 等相关资源。多页应用跳转，需要整页资源刷新。
 
-### 两者表格对比
+## 两者表格对比
 
 
 
@@ -86,9 +86,10 @@ http://xxx/page1.html | http://xxx/page2.html
  前端路由的核心：改变视图的同时不会向后端发出请求。
 :::
 
-###  vue-router 路由的两种模式：hash&history
+**vue-router 路由的两种模式：hash&history**
 
-#### 1、hash 模式
+
+###  1、hash 模式
 hash 模式背后的原理是 onhashchange 事件。
 
 
@@ -122,7 +123,7 @@ hashchange 事件对象有下面两个属性：
 
 hash 模式的特点在于 hash 出现在 url 中，但是不会被包括在 HTTP 请求中，对后端没有影响，不会重新加载页面。
 
-#### 2、history 模式
+### 2、history 模式
 
 > 利用了 HTML5 History Interface 中新增的 pushState() 和 replaceState()，它们提供了对历史记录进行修改的功能
 
@@ -171,11 +172,11 @@ document.getElementById('backLink').onclick = function () {
 
 }
 ```
-##### 注意，返回上一页时，页面通常是从浏览器缓存之中加载，而不是重新要求服务器发送新的网页
+**注意，返回上一页时，页面通常是从浏览器缓存之中加载，而不是重新要求服务器发送新的网页**
 
 > history.pushState()
 
-##### HTML5为history对象添加了两个新方法，history.pushState()和history.replaceState()，用来在浏览历史中添加和修改记录。
+**HTML5为history对象添加了两个新方法，history.pushState()和history.replaceState()，用来在浏览历史中添加和修改记录。**
 
 ```js
 if (!!(window.history && history.pushState)){
@@ -205,7 +206,7 @@ history.pushState(stateObj, 'page 2', '2.html');
 
 添加上面这个新记录后，浏览器地址栏立刻显示example.com/2.html，但并不会跳转到2.html，甚至也不会检查2.html是否存在，它只是成为浏览历史中的最新记录。假定这时你访问了google.com，然后点击了倒退按钮，页面的url将显示2.html，但是内容还是原来的1.html。你再点击一次倒退按钮，url将显示1.html，内容不变。
 
-##### 总之，pushState方法不会触发页面刷新，只是导致history对象发生变化，地址栏会有反应。如果pushState的url参数，设置了一个新的锚点值（即hash），并不会触发hashchange事件。如果设置了一个跨域网址，则会报错
+**总之，pushState方法不会触发页面刷新，只是导致history对象发生变化，地址栏会有反应。如果pushState的url参数，设置了一个新的锚点值（即hash），并不会触发hashchange事件。如果设置了一个跨域网址，则会报错**
 
 // 报错
 

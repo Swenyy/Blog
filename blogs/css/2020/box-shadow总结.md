@@ -7,16 +7,16 @@ categories:
  - css
 ---
 
-# box-shadow属性
+## box-shadow属性
 
-```
+```css
 //向div元素添加阴影
 div
 {
     box-shadow: 10px 10px 5px #888888;
 }
 ```
-# 浏览器兼容情况
+## 浏览器兼容情况
 IE兼容到9.0.0
 
 紧跟在 -webkit-, -ms- 或 -moz- 前的数字为支持该前缀属性的第一个浏览器版本号
@@ -26,18 +26,19 @@ IE兼容到9.0.0
 3.5 -moz-火狐
 
 
+```css
+/* -ms代表【ie】内核识别码
+
+-moz代表火狐【firefox】内核识别码
+
+-webkit代表谷歌【chrome】/苹果【safari】内核识别码
+
+-o代表欧朋【opera】内核识别码 */
 ```
-//-ms代表【ie】内核识别码
-
-//-moz代表火狐【firefox】内核识别码
-
-//-webkit代表谷歌【chrome】/苹果【safari】内核识别码
-
-//-o代表欧朋【opera】内核识别码
-```
 
 
-# 属性定义及使用说明
+## 属性定义及使用说明
+
 box-shadow属性可以设置**一个**或**多个**下拉阴影的框，**多个阴影间以逗号隔开，且效果重叠**，
  
 
@@ -62,7 +63,7 @@ spread | 可选。阴影的大小
 color | 可选。阴影的颜色 如rgba(0, 0, 0, 0.3)
 inset | 可选。默认是外层阴影，加上inset 则为内侧阴影
 
-**补充：**
+## 补充：
 
 <offset-x> <offset-y>: 这是头两个 <length>值，用来设置阴影偏移量。<offset-x> 设置水平偏移量，如果是负值则阴影位于元素左边。 <offset-y> 设置垂直偏移量，如果是负值则阴影位于元素上面。可用单位请查看 <length>。如果两者都是0，那么阴影位于元素后面。这时如果设置了 <blur-radius> 或 <spread-radius> 则有模糊效果。
 

@@ -227,6 +227,7 @@ module.exports = {
       {
         "title": "王金山",
         "desc": "Good Good Study，Day Day Up！！！",
+        "email": "1113080830@qq.com",
         "link": "https://www.wangjinshan.top/"
       },
       {

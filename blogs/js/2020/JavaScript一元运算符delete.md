@@ -6,6 +6,7 @@ tags:
  - Object
 categories:
  -  js
+sticky: 10
 ---
 
 ## delete 操作符用于删除对象的某个属性

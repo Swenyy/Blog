@@ -17,6 +17,7 @@
     "@vuepress/plugin-medium-zoom": "^1.7.1",
     "start": "^5.1.0",
     "vue-class-component": "^7.2.3",
+    "vuepress-plugin-boxx": "0.0.7",
     "vuepress-plugin-cursor-effects": "^1.0.0",
     "vuepress-plugin-meting": "^0.1.1",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3",

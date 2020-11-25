@@ -19,6 +19,14 @@ module.exports = {
     ]
   ],
   "theme": "reco",
+  /* locales: {
+    '/': {
+      lang: 'zh-CN'
+    },
+    '/en/': {
+      lang: 'en-US'
+    }
+  }, */
   "themeConfig": {
     valineConfig: {
       appId: 'jCcQvXhKhH9o9eOLertivEzk-gzGzoHsz',// your appId
@@ -37,7 +45,7 @@ module.exports = {
       },
       {
         "text": "文档",
-        "icon": "reco-message",
+        "icon": "reco-document",
         "items": [
           {
             "text": "vue教程",
@@ -267,6 +275,7 @@ module.exports = {
     "lineNumbers": true
   },
   plugins: [
+    ["vuepress-plugin-boxx"],
     [
       "@vuepress-reco/vuepress-plugin-kan-ban-niang",
       {
@@ -307,7 +316,7 @@ module.exports = {
       "ribbon",
       {
         size: 90,     // width of the ribbon, default: 90
-        opacity: 0.8, // opacity of the ribbon, default: 0.3
+        opacity: 0.7, // opacity of the ribbon, default: 0.3
         zIndex: -1    // z-index property of the background, default: -1
       }
     ],

@@ -8,6 +8,10 @@ categories:
  - accumulation
 ---
 
+<div style = 'margin-bottom: 50px;'>
+    <h3>每日一句，今天给自己一句吗？</h3>
+    <boxx changeTime="3000"/>
+</div>
 
 ## 个人博客搭建踩坑之路
 

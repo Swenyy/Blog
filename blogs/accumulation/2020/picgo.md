@@ -38,7 +38,7 @@ Windows选择.exe即可。
 
 ![](https://gitee.com/Sweny/images/raw/master/img/20201030170554.png)
 
-## Typora
+### Typora
 Typora 是一款支持实时预览的 Markdown 文本编辑器，如果你是第一次听说，可以移步[Typora完全使用详解](https://sspai.com/post/54912)
 
 可移步[windows下载](https://typora.io/#windows)进行下载

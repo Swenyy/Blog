@@ -6,6 +6,7 @@ tags:
  - Object
 categories:
  -  js
+sticky: 7
 ---
 
 

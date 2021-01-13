@@ -31,7 +31,14 @@ categories:
 
 故根据自己的博客搭建历程，整理了以下步骤
 
-
+### Git
+```
+git add.
+git commit -m 'xxx'
+git push
+//npm run deploy
+yarn deploy
+```
 
 **时间有限，主要步骤同上述博客，注意以下几点即可。**
 
